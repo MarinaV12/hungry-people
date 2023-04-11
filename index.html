@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/vector.svg" type="image/svg">
+    <script src="./js/maps_api.js"></script>
+</head>
+
+<body>
+    <nav class="navigation flex">
+        <div class="navigation__menu flex">
+            <a href="#home" class="navigation__menu__item">HOME</a>
+            <a href="#about" class="navigation__menu__item">ABOUT</a>
+            <a href="#team" class="navigation__menu__item">TEAM</a>
+            <a href="#booking" class="navigation__menu__item">BOOKING</a>
+        </div>
+
+        <div class="navigation__logo" id="logo">
+            <img src="./img/vector.svg" alt="logo" class="navigation__logo__img">
+        </div>
+        
+        <div class="navigation__menu flex">
+            <a href="#menu" class="navigation__menu__item">MENU</a>
+            <a href="#galerie" class="navigation__menu__item">GALERIE</a>
+            <a href="#events" class="navigation__menu__item">EVENTS</a>
+            <a href="#contact" class="navigation__menu__item">CONTACT</a>
+        </div>
+    </nav>
+    <header class="header" id="home">
+        <div class="header__logo">
+            <img src="./img/vector.svg" alt="logo" class="header__logo__img">
+        </div>
+        
+        <div class="header__time">
+            <p class="header__time__text">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+        </div> 
+
+        <div class="header__wrap flex">
+            <div class="header__times"></div>
+
+            <div class="header__text">
+                <h3 class="header__text__h3">RESTAURANT</h3>
+                <h1 class="header__text__h1">hungry people</h1>
+                <div class="header__btns flex">
+                    <a href="#booking" class="header__btn button">BOOK TABLE</a>
+                    <a href="#about" class="header__btn button">EXPLORE</a>
+                </div>
+            </div>
+
+            <div class="socials flex">
+                <a href="https://www.facebook.com/" class="socials__link">
+                    <svg  class="socials__svg">
+                        <use xlink:href="./img/sprite.svg#social1" class="socials__img"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/" class="socials__link">
+                    <svg class="socials__svg">
+                        <use xlink:href="./img/sprite.svg#social2" class="socials__img"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" class="socials__link">
+                    <svg class="socials__svg">
+                        <use xlink:href="./img/sprite.svg#social3" class="socials__img"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <a data-scroll href="#about" class="header__link">
+            <svg  class="header__link__svg">
+                <use xlink:href="./img/sprite.svg#down-btn" class="header__link__img"></use>
+            </svg>
+        </a>
+    </header>
+
+    <main class="main">
+        <section class="section aboutUs flex" id="about">
+            <div class="section__text">
+                <h2 class="section__header2">
+                    about us
+                </h2>
+                <h3 class="section__header3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                </h3>
+                <p class="section__txt">
+                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                </p>
+            </div>
+            <div class="section__imgs">
+                <div class="section__img aboutUs__img"></div>
+                <div class="section__rectangle anim"></div>
+            </div>
+        </section>
+
+        <section class="section section_bg team flex" id="team">
+            <h4 class="section__header">
+                OUR TEAM
+            </h4>
+            <div class="section__text">
+                <h2 class="section__header2">
+                    MASTER CHEF
+                </h2>
+                <h3 class="section__header3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+               </h3>
+                <p class="section__txt">
+                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                </p>
+            </div>
+            <div class="section__imgs section_bg__imgs">
+                <div class="section__img team__img"></div>
+                <div class="section__rectangle section_bg__rectangle anim"></div>
+            </div>
+        </section>
+
+        <section class="section booking flex" id="booking">
+            <div class="section__text">
+                <h2 class="section__header2">
+                    book a table
+                </h2>
+                <form class="form flex">
+                    <input required type="text" placeholder="Name" class="form__input booking__input">
+                    <input required type="email" placeholder="Email" class="form__input booking__input">
+                    <input required type="tel" placeholder="Phone" class="form__input booking__input">
+                    <input required type="number" placeholder="People" class="form__input booking__input">
+                    <input required type="date" class="form__input booking__input">
+                    <input required type="time" class="form__input booking__input">
+                    <button type="submit" class="btn booking__btn">BOOK NOW</button>
+                </form>
+            </div>
+            <div class="section__imgs">
+                <div class="section__img booking__img"></div>
+                <div class="section__rectangle anim"></div>
+            </div>
+        </section>
+
+        <section class="section section_slider">
+            <h4 class="section__header">
+                specialties
+            </h4>
+            <div class="slider">
+                <div class="slider__slide">
+                    <section class="section section_bg specialties flex">
+                        <div class="section__text">
+                            <h2 class="section__header2">
+                                chicken nuggets
+                            </h2>
+                            <h3 class="section__header3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                            </h3>
+                            <p class="section__txt">
+                                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                            </p>
+                        </div>
+                        <div class="section__imgs section_bg__imgs">
+                            <div class="section__img specialties__img"></div>
+                            <div class="section__rectangle section_bg__rectangle"></div>
+                        </div>
+                    </section>
+                </div>
+                <div class="slider__slide">
+                    <section class="section section_bg specialties flex">
+                        <div class="section__text">
+                            <h2 class="section__header2">
+                                chocolate pancakes
+                            </h2>
+                            <h3 class="section__header3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                            </h3>
+                            <p class="section__txt">
+                                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                            </p>
+                        </div>
+                        <div class="section__imgs section_bg__imgs">
+                            <div class="section__img specialties__img2"></div>
+                            <div class="section__rectangle section_bg__rectangle"></div>
+                        </div>
+                    </section>
+                </div>
+                <div class="slider__slide">
+                    <section class="section section_bg specialties flex">
+                        <div class="section__text">
+                            <h2 class="section__header2">
+                                fish and chips
+                            </h2>
+                            <h3 class="section__header3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                            </h3>
+                            <p class="section__txt">
+                                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                            </p>
+                        </div>
+                        <div class="section__imgs section_bg__imgs">
+                            <div class="section__img specialties__img3"></div>
+                            <div class="section__rectangle section_bg__rectangle"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="section menu" id="menu">
+            <h2 class="section__header2">
+                DELICIOUS MENU
+            </h2>
+            <h3 class="section__header3 menu__header3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+            </h3>
+            <div class="menu__btns flex">
+                <div class="menu__btn" id="soupe">SOUPE</div>
+                <span class="menu__btns__line"></span>
+                <div class="menu__btn" id="pizza">PIZZA</div>
+                <span class="menu__btns__line"></span>
+                <div class="menu__btn" id="pasta">PASTA</div>
+                <span class="menu__btns__line"></span>
+                <div class="menu__btn" id="desert">DESERT</div>
+                <span class="menu__btns__line"></span>
+                <div class="menu__btn" id="wine">WINE</div>
+                <span class="menu__btns__line"></span>
+                <div class="menu__btn" id="beer">BEER</div>
+                <span class="menu__btns__line"></span>
+                <div class="menu__btn" id="drinks">DRINKS</div>
+            </div>
+
+                <ul class="menu__list flex" id="menu__list_soupe">
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">GOLDEN TURMERIC NOODLE SOUP  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                </ul>
+
+                <ul class="menu__list hidden flex" id="menu__list_pizza">
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                </ul>
+            
+                <ul class="menu__list hidden flex" id="menu__list_pasta">
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">MASCARPONE PESTO PASTA  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                </ul>
+           
+                <ul class="menu__list hidden flex" id="menu__list_desert">
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CHOCOLATE PANCAKES  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                </ul>
+
+                <ul class="menu__list hidden flex" id="menu__list_wine">
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">CABERNET SAUVIGNON, MERLOT & SAPERAVI  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                </ul>
+
+                <ul class="menu__list hidden flex" id="menu__list_beer">
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">STELLA ARTOIS  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                </ul>
+
+                <ul class="menu__list hidden flex" id="menu__list_drinks">
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                    <li class="menu__list__item">
+                        <p class="menu__list__item__main">ORANGE JUSE  . . . .   55,68 USD</p>
+                        <p class="menu__list__item__secondary">Integer ullamcorper neque eu purus euismod</p>
+                    </li>
+                </ul>
+            
+
+        </section>
+
+        <section class="section section_bg events flex" id="events">
+            <h4 class="section__header">
+                PRIVATE EVENTS
+            </h4>
+            <div class="section__imgs">
+                <div class="section__img events__img1">
+                    <div class="section__img__text section__img1__text">corporate pzrties</div>
+                </div>
+                <div class="section__rectangle anim"></div>
+            </div>
+            <div class="section__imgs section_bg__imgs">
+                <div class="section__img events__img2">
+                    <div class="section__img__text section__img2__text">weddings</div>
+                </div>
+                <div class="section__rectangle section_bg__rectangle anim"></div>
+            </div>
+        </section>
+
+        <section class="eventsGallery flex" id="galerie">
+            <div class="eventsGallery__img eventsGallery__img1">
+                <img src="./img/events1.png" class="eventsGallery__image" alt="events1">
+            </div>
+            <div class="eventsGallery__img eventsGallery__img2">
+                <img src="./img/events2.png" class="eventsGallery__image" alt="events2">
+            </div>
+            <div class="eventsGallery__img eventsGallery__img3">
+                <img src="./img/events3.png" class="eventsGallery__image" alt="events3">
+            </div>
+            <div class="eventsGallery__img eventsGallery__img4">
+                <img src="./img/events4.png" class="eventsGallery__image" alt="events4">
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2 class="section__header2">
+                CONTACT
+            </h2>
+            <h3 class="section__header3 contact__header3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+            </h3>
+            <form class="form" id="formContact">
+                <div class="form__wrap flex">
+                    <input required type="text" placeholder="Name" class="form__input contact__input">
+                    <input required type="email" placeholder="Email" class="form__input contact__input">
+                    <input required type="tel" placeholder="Phone" class="form__input contact__input">
+                </div>
+                <textarea placeholder="Message" class="form__input contact__textarea"></textarea>
+            </form>
+            <div class="contact__contacts contacts flex">
+                <div class="contacts__wrap flex">
+                    <p class="contacts__text">
+                        <i class="fa-solid fa-location-dot contacts__icon"></i>
+                        Sadova St, Mykolaiv, Ukrain
+                    </p>
+                    <p class="contacts__text">
+                        <i class="fa-solid fa-phone contacts__icon"></i>
+                        <a href="tel:+40729131637" class="contacts__text__link">+40 729 131 637/ +40 726 458 782</a>
+                    </p>
+                    <p class="contacts__text">
+                        <i class="fa-solid fa-envelope contacts__icon"></i>
+                        <a href="mailto:office@mindblister.com" class="contacts__text__link">office@mindblister.com</a>
+                    </p>
+                </div>
+                <button form="formContact" type="submit" class="btn contact__btn">SEND MESSAGE</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="map" id="map">
+        </div> 
+        <div class="footer__rectangle">
+            <p>© Copyright <span>Mindblister</span>  2019</p>
+        </div>     
+    </footer>
+
+    <div class="btn-up btn-up_hide"></div>
+
+    <script src="https://kit.fontawesome.com/e8ac3eb372.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery.min,js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#about"]');
+    </script>
+</body>
+</html>

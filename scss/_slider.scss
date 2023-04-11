@@ -1,0 +1,50 @@
+// ----------- Custom Class ------
+
+.slider {
+    width: 100%;
+}
+
+.slick-track {
+    display:flex;
+}
+
+.slick-slide {
+    height:auto;
+    flex:0 0 auto;
+}
+
+
+// ------------ Default Class ------ 
+
+.slick-dots {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    position: absolute;
+
+    li {
+        &.slick-active {
+            & button {
+                background: #FFFFFF;
+            }
+        }
+    }
+    
+    button {
+        font-size: 0;
+        background: #7e5aff00;
+        border: 1px solid #ffffff;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.slider .slick-dots {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3.3vw;
+}
